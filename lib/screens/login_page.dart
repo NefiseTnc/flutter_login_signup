@@ -7,7 +7,6 @@ import 'widgets/custom_checkbox.dart';
 import 'widgets/custom_textfield.dart';
 import 'widgets/social_media_button.dart';
 
-
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -54,7 +53,12 @@ class LoginPage extends StatelessWidget {
               const SizedBox(height: 25),
               const CustomCheckbox(text: 'Beni Hatırla'),
               const SizedBox(height: 50),
-              CustomButton(text: 'Giriş Yap', onTap: () {}),
+              CustomButton(
+                  text: 'Giriş Yap',
+                  onTap: () {
+                    Navigator.pushNamedAndRemoveUntil(
+                        context, Routes.homePage, (route) => false);
+                  }),
               const SizedBox(height: 20),
               Center(
                 child: Text(
