@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_login_signup/screens/widgets/custom_button.dart';
 import 'package:flutter_login_signup/screens/widgets/custom_dropdown_button.dart';
 import 'package:flutter_login_signup/screens/widgets/setting_item.dart';
 import 'package:flutter_login_signup/screens/widgets/setting_title.dart';
 import 'package:flutter_login_signup/screens/widgets/switch_button.dart';
+import 'package:flutter_login_signup/utils/routes.dart';
 import '../utils/colors.dart';
 
 class SettingPage extends StatelessWidget {
@@ -23,7 +23,7 @@ class SettingPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               _buildAppbar(context),
-              _buildAccountSettings(),
+              _buildAccountSettings(context),
               _buildNotificationSettings(),
               _buildThemeSettings(),
               _buildMoreSettings(context),
@@ -41,15 +41,27 @@ class SettingPage extends StatelessWidget {
             fontWeight: FontWeight.w500, color: ThemeColors.primaryColor));
   }
 
-  Widget _buildAccountSettings() {
+  Widget _buildAccountSettings(BuildContext context) {
     return Column(
       children: [
         const SizedBox(height: 25),
         const SettingTitle(title: 'Hesap', icon: Icons.person),
         const SizedBox(height: 25),
-        SettingItem(text: 'Profili Düzenle', onTap: () {}),
-        SettingItem(text: 'Şifre Değiştir', onTap: () {}),
-        SettingItem(text: 'Sosyal Ağlar', onTap: () {}),
+        SettingItem(
+            text: 'Profili Düzenle',
+            onTap: () {
+              Navigator.pushNamed(context, Routes.profileSettingsPage);
+            }),
+        SettingItem(
+            text: 'Şifre Değiştir',
+            onTap: () {
+              Navigator.pushNamed(context, Routes.changePasswordPage);
+            }),
+        SettingItem(
+            text: 'Sosyal Ağlar',
+            onTap: () {
+              Navigator.pushNamed(context, Routes.socialMediaPage);
+            }),
       ],
     );
   }
