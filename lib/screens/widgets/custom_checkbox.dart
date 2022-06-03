@@ -44,7 +44,7 @@ class _CustomCheckboxState extends State<CustomCheckbox> {
                 : null,
           ),
         ),
-        const SizedBox(width: 3),
+        const SizedBox(width: 10),
         Text(
           widget.text,
           style: const TextStyle(
