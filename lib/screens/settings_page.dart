@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_login_signup/screens/widgets/custom_dropdown_button.dart';
-import 'package:flutter_login_signup/screens/widgets/setting_item.dart';
-import 'package:flutter_login_signup/screens/widgets/setting_title.dart';
-import 'package:flutter_login_signup/screens/widgets/switch_button.dart';
+import 'package:flutter_login_signup/screens/widgets/dropdown_button_widget.dart';
+import 'package:flutter_login_signup/screens/widgets/setting_item_widget.dart';
+import 'package:flutter_login_signup/screens/widgets/setting_title_widget.dart';
+import 'package:flutter_login_signup/screens/widgets/switch_button_widget.dart';
 import 'package:flutter_login_signup/utils/routes.dart';
 import '../utils/colors.dart';
 
@@ -45,19 +45,19 @@ class SettingPage extends StatelessWidget {
     return Column(
       children: [
         const SizedBox(height: 25),
-        const SettingTitle(title: 'Hesap', icon: Icons.person),
+        const SettingTitleWidget(title: 'Hesap', icon: Icons.person),
         const SizedBox(height: 25),
-        SettingItem(
+        SettingItemWidget(
             text: 'Profili Düzenle',
             onTap: () {
               Navigator.pushNamed(context, Routes.profileSettingsPage);
             }),
-        SettingItem(
+        SettingItemWidget(
             text: 'Şifre Değiştir',
             onTap: () {
               Navigator.pushNamed(context, Routes.changePasswordPage);
             }),
-        SettingItem(
+        SettingItemWidget(
             text: 'Sosyal Ağlar',
             onTap: () {
               Navigator.pushNamed(context, Routes.socialMediaPage);
@@ -70,21 +70,20 @@ class SettingPage extends StatelessWidget {
     return Column(
       children: const [
         SizedBox(height: 25),
-        SettingTitle(title: 'Bildirimler', icon: Icons.notifications),
+        SettingTitleWidget(title: 'Bildirimler', icon: Icons.notifications),
         SizedBox(height: 25),
-        SwitchButton(text: 'Bildirimler'),
+        SwitchButtonWidget(text: 'Bildirimler'),
       ],
     );
   }
 
   Widget _buildThemeSettings() {
     return Column(
-      children: [
-        const SizedBox(height: 25),
-        const SettingTitle(title: 'Tema', icon: Icons.palette),
-        const SizedBox(height: 25),
-        SettingItem(text: 'Temayı Özelleştir', onTap: () {}),
-        const SwitchButton(text: 'Karanlık Mod'),
+      children: const [
+        SizedBox(height: 25),
+        SettingTitleWidget(title: 'Tema', icon: Icons.palette),
+        SizedBox(height: 25),
+        SwitchButtonWidget(text: 'Karanlık Mod'),
       ],
     );
   }
@@ -93,8 +92,8 @@ class SettingPage extends StatelessWidget {
     return Column(
       children: const [
         SizedBox(height: 25),
-        SettingTitle(title: 'Diğer', icon: Icons.more_horiz),
-        CustomDropDownButton(text: 'Languege', list: ['Türkçe', 'Engilish']),
+        SettingTitleWidget(title: 'Diğer', icon: Icons.more_horiz),
+        DropDownButtonWidget(text: 'Languege', list: ['Türkçe', 'Engilish']),
         SizedBox(height: 25),
       ],
     );

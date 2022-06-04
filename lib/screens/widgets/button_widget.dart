@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../../utils/colors.dart';
 
-class CustomButton extends StatelessWidget {
+class ButtonWidget extends StatelessWidget {
   final String text;
   final VoidCallback onTap;
-  const CustomButton({
+  const ButtonWidget({
     Key? key,
     required this.text,
     required this.onTap,

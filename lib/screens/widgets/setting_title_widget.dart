@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login_signup/utils/colors.dart';
 
-class SettingTitle extends StatelessWidget {
+class SettingTitleWidget extends StatelessWidget {
   final String title;
   final IconData icon;
-  const SettingTitle({
+  const SettingTitleWidget({
     Key? key,
     required this.title,
     required this.icon,

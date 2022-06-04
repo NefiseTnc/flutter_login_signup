@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class SettingItem extends StatelessWidget {
+class SettingItemWidget extends StatelessWidget {
   final String text;
   final VoidCallback onTap;
-  const SettingItem({
+  const SettingItemWidget({
     Key? key,
     required this.text,
     required this.onTap,

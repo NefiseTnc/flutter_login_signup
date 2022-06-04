@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../utils/colors.dart';
 import '../utils/routes.dart';
-import 'widgets/custom_button.dart';
-import 'widgets/custom_textfield.dart';
+import 'widgets/button_widget.dart';
+import 'widgets/textfield_widget.dart';
 
 class ChangePasswordPage extends StatelessWidget {
   const ChangePasswordPage({Key? key}) : super(key: key);
@@ -32,17 +32,17 @@ class ChangePasswordPage extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                     color: ThemeColors.primaryColor)),
             const SizedBox(height: 50),
-            const CustomTextfield(
+            const TextfieldWidget(
               label: 'Yeni Şifre',
               isPass: true,
             ),
             const SizedBox(height: 10),
-            const CustomTextfield(
+            const TextfieldWidget(
               label: 'Yeni Şifre(Tekrar)',
               isPass: true,
             ),
             const SizedBox(height: 50),
-            CustomButton(text: 'Kaydet', onTap: () {})
+            ButtonWidget(text: 'Kaydet', onTap: () {})
           ],
         ),
       )),

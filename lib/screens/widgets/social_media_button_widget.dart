@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 import '../../utils/colors.dart';
 
-class SocialMediaButton extends StatelessWidget {
+class SocialMediaButtonWidget extends StatelessWidget {
   final String imageUrl;
   final String text;
   final Color color;
   final VoidCallback onTap;
-  const SocialMediaButton({
+  const SocialMediaButtonWidget({
     Key? key,
     required this.imageUrl,
     required this.text,

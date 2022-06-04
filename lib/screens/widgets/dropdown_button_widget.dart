@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class CustomDropDownButton extends StatefulWidget {
+class DropDownButtonWidget extends StatefulWidget {
   final String text;
   final List<String> list;
-  const CustomDropDownButton({
+  const DropDownButtonWidget({
     Key? key,
     required this.text,
     required this.list,
   }) : super(key: key);
 
   @override
-  State<CustomDropDownButton> createState() => _CustomDropDownButtonState();
+  State<DropDownButtonWidget> createState() => _DropDownButtonWidgetState();
 }
 
-class _CustomDropDownButtonState extends State<CustomDropDownButton> {
+class _DropDownButtonWidgetState extends State<DropDownButtonWidget> {
   String _selected = 'Türkçe';
   @override
   Widget build(BuildContext context) {

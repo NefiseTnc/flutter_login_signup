@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_login_signup/screens/widgets/custom_checkbox.dart';
-import 'package:flutter_login_signup/screens/widgets/setting_title.dart';
+import 'package:flutter_login_signup/screens/widgets/checkbox_widget.dart';
+import 'package:flutter_login_signup/screens/widgets/setting_title_widget.dart';
 
 class SocialMediaPage extends StatelessWidget {
   const SocialMediaPage({Key? key}) : super(key: key);
@@ -17,20 +17,32 @@ class SocialMediaPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
-            children: const [
-              SettingTitle(
+            children: [
+              const SettingTitleWidget(
                 title: 'Sosyal Media',
                 icon: Icons.mediation,
               ),
-              SizedBox(height: 25),
-              CustomCheckbox(text: 'Google'),
-              Padding(
+              const SizedBox(height: 25),
+              Row(
+                children: const [
+                  CheckboxWidget(),
+                  SizedBox(width: 10),
+                  Text('Google'),
+                ],
+              ),
+              const Padding(
                 padding: EdgeInsets.only(left: 30),
                 child: Text('Bağlantıyı kes'),
               ),
-              SizedBox(height: 50),
-              CustomCheckbox(text: 'Facebook'),
-              Padding(
+              const SizedBox(height: 50),
+              Row(
+                children: const [
+                  CheckboxWidget(),
+                  SizedBox(width: 10),
+                  Text('Facebook'),
+                ],
+              ),
+              const Padding(
                 padding: EdgeInsets.only(left: 30),
                 child: Text('Hesabı bağla'),
               ),

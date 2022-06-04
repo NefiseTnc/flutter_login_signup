@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../utils/colors.dart';
 import '../utils/routes.dart';
-import 'widgets/custom_button.dart';
-import 'widgets/custom_checkbox.dart';
-import 'widgets/custom_textfield.dart';
-import 'widgets/social_media_button.dart';
+import 'widgets/button_widget.dart';
+import 'widgets/checkbox_widget.dart';
+import 'widgets/textfield_widget.dart';
+import 'widgets/social_media_button_widget.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -42,18 +42,24 @@ class LoginPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 50),
-              const CustomTextfield(
+              const TextfieldWidget(
                 label: 'Email',
                 inputType: TextInputType.emailAddress,
               ),
               const SizedBox(height: 10),
-              const CustomTextfield(label: 'Şifre', isPass: true),
+              const TextfieldWidget(label: 'Şifre', isPass: true),
               const SizedBox(height: 10),
               _buildResetPasswordText(context),
               const SizedBox(height: 25),
-              const CustomCheckbox(text: 'Beni Hatırla'),
+              Row(
+                children: const [
+                  CheckboxWidget(),
+                  SizedBox(width: 10),
+                  Text('Beni Hatırla'),
+                ],
+              ),
               const SizedBox(height: 50),
-              CustomButton(
+              ButtonWidget(
                   text: 'Giriş Yap',
                   onTap: () {
                     Navigator.pushNamedAndRemoveUntil(
@@ -69,14 +75,14 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 25),
-              SocialMediaButton(
+              SocialMediaButtonWidget(
                 imageUrl: 'assets/icons/ic_facebook.png',
                 text: 'Facebook ile giriş yap',
                 color: Colors.blue,
                 onTap: () {},
               ),
               const SizedBox(height: 15),
-              SocialMediaButton(
+              SocialMediaButtonWidget(
                 imageUrl: 'assets/icons/ic_google.png',
                 text: 'Google ile giriş yap',
                 color: Colors.orange,

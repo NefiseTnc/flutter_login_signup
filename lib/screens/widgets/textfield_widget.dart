@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 import '../../utils/colors.dart';
 
-class CustomTextfield extends StatefulWidget {
+class TextfieldWidget extends StatefulWidget {
   final String label;
   final TextInputType? inputType;
   final bool isPass;
-  const CustomTextfield({
+  const TextfieldWidget({
     Key? key,
     required this.label,
     this.inputType = TextInputType.text,
@@ -14,10 +14,10 @@ class CustomTextfield extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<CustomTextfield> createState() => _CustomTextfieldState();
+  State<TextfieldWidget> createState() => _TextfieldWidgetState();
 }
 
-class _CustomTextfieldState extends State<CustomTextfield> {
+class _TextfieldWidgetState extends State<TextfieldWidget> {
   bool _isObscureText = true;
   @override
   Widget build(BuildContext context) {

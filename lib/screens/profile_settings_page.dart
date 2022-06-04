@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_login_signup/screens/widgets/custom_button.dart';
-import 'package:flutter_login_signup/screens/widgets/custom_textfield.dart';
-import 'package:flutter_login_signup/screens/widgets/setting_title.dart';
+import 'package:flutter_login_signup/screens/widgets/button_widget.dart';
+import 'package:flutter_login_signup/screens/widgets/textfield_widget.dart';
+import 'package:flutter_login_signup/screens/widgets/setting_title_widget.dart';
 import 'package:flutter_login_signup/utils/colors.dart';
 
 import '../utils/routes.dart';
@@ -28,12 +28,12 @@ class ProfileSettingsPage extends StatelessWidget {
                 color: ThemeColors.secondaryColor,
               ),
               const SizedBox(height: 15),
-              const SettingTitle(title: 'Hesap', icon: Icons.person),
+              const SettingTitleWidget(title: 'Hesap', icon: Icons.person),
               const SizedBox(height: 15),
-              const CustomTextfield(label: 'Kullanıcı Adı'),
-              const CustomTextfield(label: 'Soyadınız'),
-              const CustomTextfield(label: 'Emailiniz'),
-              const CustomTextfield(label: 'Şifre'),
+              const TextfieldWidget(label: 'Kullanıcı Adı'),
+              const TextfieldWidget(label: 'Soyadınız'),
+              const TextfieldWidget(label: 'Emailiniz'),
+              const TextfieldWidget(label: 'Şifre'),
               const SizedBox(height: 15),
               GestureDetector(
                 onTap: () {
@@ -48,9 +48,9 @@ class ProfileSettingsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 50),
-              CustomButton(text: 'İptal', onTap: () {}),
+              ButtonWidget(text: 'İptal', onTap: () {}),
               const SizedBox(height: 15),
-              CustomButton(text: 'Kaydet', onTap: () {}),
+              ButtonWidget(text: 'Kaydet', onTap: () {}),
             ],
           ),
         ),

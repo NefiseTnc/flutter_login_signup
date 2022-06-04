@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
-
 import '../utils/colors.dart';
 import '../utils/routes.dart';
-import 'widgets/custom_button.dart';
-import 'widgets/custom_textfield.dart';
+import 'widgets/button_widget.dart';
+import 'widgets/textfield_widget.dart';
 
 class ResetPasswordPage extends StatelessWidget {
   const ResetPasswordPage({Key? key}) : super(key: key);
@@ -34,12 +33,12 @@ class ResetPasswordPage extends StatelessWidget {
                     color: ThemeColors.primaryColor)),
             const Text('Şifrenizi değiştirmek için e-mailinizi giriniz '),
             const SizedBox(height: 50),
-            const CustomTextfield(
+            const TextfieldWidget(
               label: 'Email',
               inputType: TextInputType.emailAddress,
             ),
             const SizedBox(height: 50),
-            CustomButton(
+            ButtonWidget(
                 text: 'Gönder',
                 onTap: () {
                   Navigator.pushNamed(context, '/changePassword');

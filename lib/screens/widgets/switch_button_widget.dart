@@ -2,18 +2,18 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_login_signup/utils/colors.dart';
 
-class SwitchButton extends StatefulWidget {
+class SwitchButtonWidget extends StatefulWidget {
   final String text;
-  const SwitchButton({
+  const SwitchButtonWidget({
     Key? key,
     required this.text,
   }) : super(key: key);
 
   @override
-  State<SwitchButton> createState() => _SwitchButtonState();
+  State<SwitchButtonWidget> createState() => _SwitchButtonWidgetState();
 }
 
-class _SwitchButtonState extends State<SwitchButton> {
+class _SwitchButtonWidgetState extends State<SwitchButtonWidget> {
   bool _isActive = false;
 
   @override

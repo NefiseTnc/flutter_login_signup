@@ -3,7 +3,6 @@ import 'package:flutter_login_signup/screens/home_page.dart';
 import 'package:flutter_login_signup/screens/profile_settings_page.dart';
 import 'package:flutter_login_signup/screens/settings_page.dart';
 import 'package:flutter_login_signup/screens/social_media_page.dart';
-import 'package:flutter_login_signup/screens/theme_setting_page.dart';
 import '../screens/change_password_page.dart';
 import '../screens/login_page.dart';
 import '../screens/register_page.dart';
@@ -27,14 +26,9 @@ class Routes {
     Routes.registerPage: (_) => const RegisterPage(),
     Routes.resetPasswordPage: (_) => const ResetPasswordPage(),
     Routes.changePasswordPage: (_) => const ChangePasswordPage(),
-
-    Routes.homePage:(_)=>const HomePage(),
-
+    Routes.homePage: (_) => const HomePage(),
     Routes.settingsPage: (_) => const SettingPage(),
     Routes.profileSettingsPage: (_) => const ProfileSettingsPage(),
     Routes.socialMediaPage: (_) => const SocialMediaPage(),
-    Routes.themeSettingPage: (_) => const ThemeSettingsPage(),
-
-
   };
 }

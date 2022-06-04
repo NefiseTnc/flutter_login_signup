@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login_signup/screens/error_page.dart';
 import 'package:flutter_login_signup/screens/home_page.dart';
+import 'package:flutter_login_signup/screens/login_page.dart';
 import 'package:flutter_login_signup/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'utils/routes.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
             color: ThemeColors.primaryColor,
           ),
           textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)),
-      home: const HomePage(),
+      home: const LoginPage(),
       routes: Routes.routes,
       onUnknownRoute: (settings) => MaterialPageRoute(
         builder: (context) => const ErrorPage(),
