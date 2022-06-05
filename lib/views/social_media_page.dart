@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_login_signup/screens/widgets/checkbox_widget.dart';
-import 'package:flutter_login_signup/screens/widgets/setting_title_widget.dart';
+import 'package:flutter_login_signup/views/widgets/checkbox_widget.dart';
+import 'package:flutter_login_signup/views/widgets/setting_title_widget.dart';
 
 class SocialMediaPage extends StatelessWidget {
   const SocialMediaPage({Key? key}) : super(key: key);

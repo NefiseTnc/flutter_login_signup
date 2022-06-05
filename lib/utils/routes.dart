@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_login_signup/screens/home_page.dart';
-import 'package:flutter_login_signup/screens/profile_settings_page.dart';
-import 'package:flutter_login_signup/screens/settings_page.dart';
-import 'package:flutter_login_signup/screens/social_media_page.dart';
-import '../screens/change_password_page.dart';
-import '../screens/login_page.dart';
-import '../screens/register_page.dart';
-import '../screens/reset_password_page.dart';
+import 'package:flutter_login_signup/views/home_page.dart';
+import 'package:flutter_login_signup/views/profile_settings_page.dart';
+import 'package:flutter_login_signup/views/settings_page.dart';
+import 'package:flutter_login_signup/views/social_media_page.dart';
+import '../views/change_password_page.dart';
+import '../views/login_page.dart';
+import '../views/register_page.dart';
+import '../views/reset_password_page.dart';
 
 class Routes {
   static const String loginPage = '/loginPage';

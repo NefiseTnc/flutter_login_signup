@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_login_signup/screens/widgets/dropdown_button_widget.dart';
-import 'package:flutter_login_signup/screens/widgets/setting_item_widget.dart';
-import 'package:flutter_login_signup/screens/widgets/setting_title_widget.dart';
-import 'package:flutter_login_signup/screens/widgets/switch_button_widget.dart';
+import 'package:flutter_login_signup/views/widgets/dropdown_button_widget.dart';
+import 'package:flutter_login_signup/views/widgets/setting_item_widget.dart';
+import 'package:flutter_login_signup/views/widgets/setting_title_widget.dart';
+import 'package:flutter_login_signup/views/widgets/switch_button_widget.dart';
 import 'package:flutter_login_signup/utils/routes.dart';
 import '../utils/colors.dart';
 
